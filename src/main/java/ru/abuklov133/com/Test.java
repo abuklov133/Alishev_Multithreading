@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class Test {
+
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         for (int i = 0; i < 5; i++) {
@@ -17,6 +18,7 @@ public class Test {
 }
 
     class Work implements Runnable {
+
         private int id;
 
         public Work(int id) {
